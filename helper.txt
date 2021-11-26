@@ -1,0 +1,17 @@
+
+## on local machine
+docker-compose build
+docker-compose up
+docker-compose up
+docker tag django-ecommerce-master_ecommerce sharmilamsr9/django-ecommerce
+docker push sharmilamsr9/django-ecommerce
+
+## on ec2 instance
+docker login
+docker pull sharmilamsr9/django-ecommerce
+# set environment varialbes such as database name, host, port, password 
+docker run -e ECOMMMERCE_DB_NAME -e ECOMMMERCE_DB_HOST \
+            -e ECOMMMERCE_DB_PORT -e ECOMMMERCE_DB_PASSWORD \
+            -e ECOMMMERCE_DB_USER -e ALLOWED_HOSTS \
+            -p 8000:8000 \
+            -t sharmilamsr9/django-ecommerce
