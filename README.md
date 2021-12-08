@@ -8,7 +8,7 @@
 2) Install Docker and ensure that docker desktop is running.  
 3) Execute below commands in terminal
 
-  ## On local machine exceute the below command to make your app server up and running  
+  **On local machine exceute the below command to make your app server up and running**  
 - docker-compose build  
 - docker-compose up  
 
