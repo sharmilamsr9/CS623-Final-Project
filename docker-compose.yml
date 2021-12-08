@@ -9,8 +9,10 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: nav
       MYSQL_DATABASE: ecommerce
-      MYSQL_USER: nav
+      MYSQL_USER: root
       MYSQL_PASSWORD: nav
+    ports:
+      - "3306:3306"
 
   ecommerce:
     depends_on:
