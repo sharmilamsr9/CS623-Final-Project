@@ -19,6 +19,6 @@
 5) For Dockerizing Django-ecommerce Website and deployment into EC2 with AWS-RDS watch the youtube video below:  
 https://youtu.be/geXi0sXybUk
 
-6) Below is the application Link after deploying on AWS-EC2:    
+6) Below is the application Link after deploying on AWS-EC2 which can be accessed to see our application:    
   Application URL: http://3.210.224.62:8000/
 
